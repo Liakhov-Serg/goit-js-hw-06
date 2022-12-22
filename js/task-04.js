@@ -6,9 +6,11 @@ decrementBtn.addEventListener("click", () => {
 } 
 );
 const incrementBtn = document.querySelector(`[data-action="increment"]`);
+
 incrementBtn.addEventListener("click", () => {
     countervalue +=1;
     document.getElementById("value").textContent = countervalue;
 } 
 );
+
 console.log(countervalue);

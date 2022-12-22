@@ -12,7 +12,7 @@ console.log("color");
 
 btnChangeColor.addEventListener("click", () => {
   const currentColor = getRandomHexColor();
-  getBody.getElementsByClassName.backgraundColor = currentColor;
+  getBody.style.backgraundColor = currentColor;
   changeColor.textContent = currentColor;
 }
 )

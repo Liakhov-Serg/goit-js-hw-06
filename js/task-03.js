@@ -20,9 +20,13 @@ const list = document.querySelector(".gallery");
 console.log(list);
 
 images.forEach((image) => {
-  const markup = `<li><img src="${image.url}" alt="${image.alt}" width = "200px"></li>`;
+  const markup = `<li><img src="${image.url}" alt="${image.alt}" width = "300px"></li>`;
   console.log(markup);
   console.log(list.insertAdjacentHTML("afterbegin", markup));
 }
 
 );
+
+list.style.display = "grid";
+list.style.gap = "50px";
+list.style.type = "none";

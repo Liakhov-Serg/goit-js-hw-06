@@ -12,6 +12,8 @@ console.log("color");
 
 btnChangeColor.addEventListener("click", () => {
   currentColor = getRandomHexColor();
+  getBody.getElementsByClassName.backgraundcolor = currentColor;
+  changeColor.textContent = currentColor;
 }
 )
 

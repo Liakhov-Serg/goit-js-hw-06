@@ -19,7 +19,7 @@ return itemObj;
     });
     console.log(itemArr);
 
-    1234567890
+    
 
 
 

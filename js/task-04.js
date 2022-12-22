@@ -1,13 +1,14 @@
-const div = document.querySelector("id#counter");
-console.log("id#counter");
-const button = document.querySelector(".decrement");
-console.log(".decrement");
-const span = document.querySelector("id#value");
-console.log("id#value");
-// const button = document.querySelector(".increment");
-// console.log(".increment");
-button.addEventListener("click", () => {
-    console.log(+1);
-}
-
-)
+let countervalue = 0;
+const decrementBtn = document.querySelector(`[data-action="decrement"]`);
+decrementBtn.addEventListener("click", () => {
+    countervalue -=1;
+    document.getElementById("value").textContent = countervalue;
+} 
+);
+const incrementBtn = document.querySelector(`[data-action="increment"]`);
+incrementBtn.addEventListener("click", () => {
+    countervalue +=1;
+    document.getElementById("value").textContent = countervalue;
+} 
+);
+console.log(countervalue);

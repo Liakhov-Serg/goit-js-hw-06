@@ -1,6 +1,5 @@
 const userform = document.querySelector(".login-form");
 
-
 userform.addEventListener("submit", forFormSubmit);
 
 function forFormSubmit(event) {

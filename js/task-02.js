@@ -14,5 +14,7 @@ const name = document.createElement("p");
 name.textContent = ingredient.name;
 
 li.appendChild(name);
+
+list.append(li);
 console.log(li);
 });

@@ -17,5 +17,5 @@ name.textContent = ingredient.name;
 li.appendChild(name);
 
 list.append(li);
-console.log(li);
+// console.log(li);
 });

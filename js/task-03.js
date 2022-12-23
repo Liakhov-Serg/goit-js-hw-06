@@ -27,4 +27,4 @@ images.forEach((image) => {
 
 list.style.display = "grid";
 list.style.gap = "50px";
-list.style.type = "none";
+list.style.listStyle = "none";

@@ -2,28 +2,16 @@ const ulElem = document.querySelector(`ul#categories`);
 const countOfChildren = ulElem.children.length;
 console.log(`Number of categories: ${countOfChildren}`);
 
-// const categList = [...document.querySelectorAll(`ul#categories`)];
-// const categArr = categList.map((categories) =>{
-//     const categori = [...categories.children];
-// })
-
 const itemList = [...document.querySelectorAll(`.item`)];
 
-const itemArr = itemList.map((item) => {
-    const categor = [...item.children];
 
-   const itemObj = {};
+itemList.forEach(elem => {
+    const numberCategories = elem.querySelectorAll("ul>li").length;
+    const title = elem.querySelector("h2").textContent;
+    console.log(`Category:`, title);
+    console.log(`Elements:`, numberCategories);
+})
 
-itemObj[categor[0].textContent] = 
-[...categor[1].children].map((item) => 
-item.textContent);
-
-return itemObj;
-
-});
-    console.log(itemArr);
-
-    
 
 
 
